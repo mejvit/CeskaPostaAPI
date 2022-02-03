@@ -1,4 +1,3 @@
-# CeskaPostaAPI
 # Česká pošta API
 
 ## AK7MT - Semestrální projekt: Repository pattern s využitím API české pošty
@@ -14,4 +13,4 @@ Zdrojové kódy aplikace jsou psány v jazyce Kotlin.
 
 Aplikace se pokouší implementovat tzv. Repository pattern. Zásilka je nejprve hledaná v lokální SQLite databázi, až následně dochází k volání API po síti.
 
-Pro volání API je využita knihovna **Retrofit**, mapování JSONu získané odpovědi na datové struktury Kotlinu zajišťuje knihovna GSON. Přístup do lokálního uložiště SQLite obstarává knihovna Room.
+Pro volání API je využita knihovna **Retrofit**, mapování JSONu získané odpovědi na datové struktury Kotlinu zajišťuje knihovna **GSON**. Přístup do lokálního uložiště SQLite obstarává knihovna **Room**.
