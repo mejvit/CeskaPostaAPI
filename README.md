@@ -11,6 +11,6 @@ Na hlavní obrazovce je zadáno číslo zásilky doručované Českou poštou. A
 ### Technické řešení
 Zdrojové kódy aplikace jsou psány v jazyce Kotlin.
 
-Aplikace se pokouší implementovat tzv. Repository pattern. Zásilka je nejprve hledaná v lokální SQLite databázi, až následně dochází k volání API po síti.
+Aplikace se pokouší implementovat tzv. Repository pattern. Jedná se o abstrakci nad daty, kdy repozitář slouží jako obecný zdroj dat. Uvnitř má pak konkrétní implementaci, jak a odkud se daná data mají získávat. Zásilka se podle jejího čísla hledá nejprve v lokální SQLite databázi, až následně dochází k volání API po síti.
 
 Pro volání API je využita knihovna **Retrofit**, mapování JSONu získané odpovědi na datové struktury Kotlinu zajišťuje knihovna **GSON**. Přístup do lokálního uložiště SQLite obstarává knihovna **Room**.
