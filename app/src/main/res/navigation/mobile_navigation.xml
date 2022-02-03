@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_about">
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="cz.utb.fai.ceskapostaapi.ui.AboutFragment"
+        android:label="O aplikaci"
+        tools:layout="@layout/about_fragment" />
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="cz.utb.fai.ceskapostaapi.ui.HistoryFragment"
+        android:label="Historie vyhledávání"
+        tools:layout="@layout/history_fragment" />
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="cz.utb.fai.ceskapostaapi.ui.HomeFragment"
+        android:label="Vyhledat zásilku" >
+        <action
+            android:id="@+id/action_homeFragment_to_parcelDetailFragment"
+            app:destination="@id/navigation_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_detail"
+        android:name="cz.utb.fai.ceskapostaapi.ui.ParcelDetailFragment"
+        android:label="Detail zásilky" >
+        <argument
+            android:name="parcelRecordId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_navigation_detail_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+</navigation>

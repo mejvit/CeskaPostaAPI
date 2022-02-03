@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CeskaPostaAPI</string>
+    <string name="title_about">O aplikaci</string>
+    <string name="title_history">Historie</string>
+    <string name="title_home">Úvod</string>
+    <string name="parcel_number">Číslo zásilky</string>
+    <string name="search">Vyhledat</string>
+    <string name="id">Id:</string>
+    <string name="parcelType">Typ zásilky:</string>
+    <string name="weight">Hmotnost:</string>
+    <string name="cod">Dobírka</string>
+    <string name="storageLength">Úložní doba:</string>
+    <string name="postOffice">Pošta:</string>
+    <string name="postCode">PSČ:</string>
+    <string name="stateText">Popis:</string>
+    <string name="date">Datum:</string>
+</resources>
